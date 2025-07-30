@@ -1,14 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training DevOps</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?technology,office') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <img class="logo" src="./images/idn-logo.png" alt="idn-logo">
-     <h1>Belajar Devops</h1>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PerusahaanKu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4">Solusi Digital Terbaik untuk Bisnismu</h1>
+      <p class="lead">Kami bantu bisnis berkembang lewat teknologi.</p>
+      <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <!-- Tentang Kami -->
+  <section id="about" class="section">
+    <div class="container text-center">
+      <h2>Tentang Kami</h2>
+      <p>Kami adalah perusahaan teknologi yang berfokus pada solusi digital kreatif dan inovatif.</p>
+      <div class="row mt-4">
+        <div class="col-md-4"><h5>🔒 Profesional</h5><p>Kami mengutamakan kualitas dan keamanan dalam setiap proyek.</p></div>
+        <div class="col-md-4"><h5>⚙️ Berpengalaman</h5><p>Telah menangani ratusan proyek dari berbagai industri.</p></div>
+        <div class="col-md-4"><h5>💡 Inovatif</h5><p>Kami berpikir kreatif untuk solusi yang efektif dan efisien.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="services" class="section bg-light">
+    <div class="container text-center">
+      <h2>Layanan Kami</h2>
+      <div class="row mt-4">
+        <div class="col-md-4"><h5>Web Development</h5><p>Pembuatan website profesional dan responsif.</p></div>
+        <div class="col-md-4"><h5>UI/UX Design</h5><p>Desain antarmuka yang menarik dan mudah digunakan.</p></div>
+        <div class="col-md-4"><h5>Digital Marketing</h5><p>Kampanye online untuk menjangkau lebih banyak pelanggan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portfolio" class="section">
+    <div class="container text-center">
+      <h2>Portofolio</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 portfolio"><img src="https://source.unsplash.com/600x400/?project1" alt="Project 1"></div>
+        <div class="col-md-4 portfolio"><img src="https://source.unsplash.com/600x400/?project2" alt="Project 2"></div>
+        <div class="col-md-4 portfolio"><img src="https://source.unsplash.com/600x400/?project3" alt="Project 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center">Hubungi Kami</h2>
+      <form class="mt-4" action="#">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Nama Anda" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" placeholder="Email Anda" required>
+          </div>
+          <div class="col-12 mb-3">
+            <textarea class="form-control" rows="5" placeholder="Pesan Anda" required></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 PerusahaanKu. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
