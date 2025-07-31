@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'dev-fachmi' }
+    agent { label 'dev-fach' }
 
     stages {
         stage('Pull SCM') {
